@@ -35,7 +35,7 @@
         pg_volumes:
           - '/opt/appdata/{{pgrole}}:/config'
           - '/mnt/downloads/nzbget/movies4k:/downloads'
-          - '/mnt/unionfs/movies4k:/movies''
+          - '/mnt/unionfs/movies4k:/movies'
           - '/mnt:/mnt'
           - '/etc/localtime:/etc/localtime:ro'
 
