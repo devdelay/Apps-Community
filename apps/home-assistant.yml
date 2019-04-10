@@ -35,6 +35,7 @@
         pg_volumes:
           - '/etc/localtime:/etc/localtime:ro'
           - '/opt/appdata/homeassistant:/config'
+          - '/dev:/dev'
 
     - name: 'Setting PG ENV'
       set_fact:
@@ -48,6 +49,9 @@
         name: '{{pgrole}}'
         image: '{{image}}'
         pull: yes
+        privileged: true
+        devices:
+          - "/dev/zwave:/dev/zwave"
         published_ports:
           - '{{ports.stdout}}{{extport}}:{{intport}}'
         volumes: '{{pg_volumes}}'
