@@ -14,7 +14,7 @@
       set_fact:
         pgrole: 'grocy'
         intport: '9283'
-        extport: '9283'
+        extport: '80'
         image: 'linuxserver/grocy'
 
     # CORE (MANDATORY) ############################################################
