@@ -13,7 +13,7 @@
     - name: 'Set Known Facts'
       set_fact:
         pgrole: 'znc'
-        intport: '9000'
+        intport: '6501'
         extport: '6501'
         image: 'linuxserver/znc'
 
