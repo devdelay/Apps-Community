@@ -16,7 +16,7 @@
         pgrole: 'booksonic'
         intport: '4040'
         extport: '4050'
-        image: 'linuxserver/booksonic'
+        image: 'linuxserver/booksonic-air'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
